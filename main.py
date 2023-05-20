@@ -17,7 +17,7 @@ async def hello(interaction: discord.Interaction):
     await interaction.response.send_message("working slash command")                    #response of the bot
 
 @bot.tree.command(name="option_chooser", description="choose an option")
-async def usermention(interaction, written_message: str):           #you can write a message which the bot can return
+async def option_chooser(interaction, written_message: str):           #you can write a message which the bot can return
   await interaction.response.send_message(written_message)
 
 bot.run(TOKEN)   #replace TOKEN with your bots token if you are not working with a seperate file to protect the token put the token in quotation marks.
